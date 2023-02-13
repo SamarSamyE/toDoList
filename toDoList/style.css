@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+   /* the header */
+   .header {
+    margin-left: 15%;
+    width: 70%;
+    background-color: #65badb;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+  }
+  
+  
+  /* Clear floats  */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+   /* Style for the input area */
+   input {
+    margin-top: 10px;
+    border: none;
+    width: 75%;
+    height: 50px;
+    padding-left: 4px; 
+    float: left;
+    font-size: 16px;
+  }
+  
+  /* Style the "+" button */
+  .addBtn {
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background:  #f3f029;
+    color:rgb(121, 128, 128);
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+    
+  /* Style the list items */
+  ul li {
+    margin-left: 15%;
+    width: 70%;
+    cursor: pointer;
+    position: relative;
+    padding: 2% 6%;
+    font-size: 20px;
+    background-color: #e5ecec;
+}
+/* when the mouse on items */
+  ul li:hover {
+    background: #9fe8f1;
+  }
+   
+  /* mark correct when the item is checked */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #f3f029;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 20px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  /* When the item is checked */
+  ul li.checked {
+    width: 70%;
+    background: #206368;
+    color: #f8e4e48e;
+    text-decoration: line-through;
+  }
+/* add done word after checked */
+  ul li.checked::after {
+   margin-left: 100%;
+   color: rgb(121, 128, 128);
+   padding: 5px;
+   background-color: #f3f029;
+   content: "done";
+   text-decoration: none;
+  }
+ 
+  
+  /*the "X" button */
+  .close {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 25px;
+  }
+  /* "X" button hover  */
+  .close:hover {
+    background-color:   #f3f029;
+    color: white;
+  }
+  
+ 
+  
+ 
+  
